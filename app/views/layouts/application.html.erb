@@ -8,7 +8,28 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body ng-app="app">
+
+    <div ng-controller="CartsController as vm">
+      <h1>Cart:</h1>
+      <div ng-repeat="product in vm.cart.products">
+        <p>{{ product.name }} - ${{product.price}}</p>
+      </div>
+    </div>
+
+    <div ng-controller="ProductsController as vm">
+      <h1>Products:</h1>
+      <div ng-repeat="product in vm.products">
+        <h3> {{ product.name }}
+        <h5> ${{ product.price }}</h5>
+        <p>
+          Description:
+        </p>
+        <p>
+          {{ product.description }}
+        </p>
+      </div>
+    </div>
+
   </body>
 </html>
