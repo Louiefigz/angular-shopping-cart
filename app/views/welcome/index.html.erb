@@ -1,13 +1,13 @@
-<div ng-controller="CartsController as vm">
+<div class="cart-container" ng-controller="CartsController as vm">
   <h1>Cart:</h1>
   <div ng-repeat="product in vm.cart.products">
     <p>{{ product.name }} - ${{product.price}}</p>
   </div>
 </div>
 
-<div ng-controller="ProductsController as vm">
+<div class="product-container" ng-controller="ProductsController as vm">
   <h1>Products:</h1>
-  <div ng-repeat="product in vm.products">
+  <div class="product-card" ng-repeat="product in vm.products">
     <h3> {{ product.name }}
     <h5> ${{ product.price }}</h5>
     <p>
