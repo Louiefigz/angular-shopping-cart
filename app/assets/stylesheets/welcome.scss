@@ -1,3 +1,21 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.cart-container {
+  width: 15vw;
+  height: 100vh;
+  padding: 15px;
+  float: left;
+  border-right: 3px solid #0ef3df;
+  box-sizing: border-box;
+}
+
+.products-container {
+  padding: 20px;
+  width: 80vw;
+  float: left;
+  height: 100vh;
+  box-sizing: border-box;
+}
